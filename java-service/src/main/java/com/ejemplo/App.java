@@ -21,7 +21,7 @@ public class App {
             String dbPass = System.getenv("DB_PASSWORD");
             String dbHost = System.getenv("DB_HOST");
 
-            String jdbcUrl = "jdbc:mysql://10.10.0.2:3306/clientes";
+            String jdbcUrl = "jdbc:mysql://10.43.0.3:3306/clientes";
 
             try (Connection conn = DriverManager.getConnection(jdbcUrl, dbUser, dbPass);
                  PreparedStatement stmt = conn.prepareStatement("SELECT * FROM clientes");
